@@ -91,8 +91,8 @@ app.use("/api*", function(req, res, next) {
 */
 
 // setup routes
-const apiCategory = require("./components/routes/api/api-books");
-app.use("/api/category", apiCategory);
+const apiBooks = require("./components/routes/api/api-books");
+app.use("/api/books", apiBooks);
 
 
 // catch 404 and forward to error handler
