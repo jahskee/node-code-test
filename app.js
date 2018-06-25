@@ -39,8 +39,10 @@ app.use(logger("dev"));
 app.use(bodyparser.urlencoded({ extended: true }));
 app.use(bodyparser.json());
 
+/*
 app.engine("html", require("ejs").renderFile);
 app.set("view engine", "html");
+*/
 
 // generate jwt tokent - simple implementation
 /*
@@ -75,6 +77,7 @@ app.use("/api", function(req, res, next) {
 });
 
 // Protect route with JWT Token
+/*
 app.use("/api*", function(req, res, next) {
   var token = req.query.token;
   jwt.verify(token, "supersecret", function(err, decoded) {
@@ -85,6 +88,7 @@ app.use("/api*", function(req, res, next) {
     }
   });
 });
+*/
 
 // setup routes
 const apiCategory = require("./components/routes/api/api-books");
