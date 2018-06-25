@@ -6,7 +6,7 @@ const bookController = require('../../controllers/api/bookController')
 
 router.get('/', bookController.list);
 router.post('/create', bookController.create);
-router.get('/read/:id', bookController.read);
+router.get('/:id', bookController.read);
 
 router.put('/update', bookController.update);
 router.delete('/delete/:id', bookController.delete);
