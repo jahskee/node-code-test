@@ -10,8 +10,8 @@
 
 ## Routes:
 
-- list all (GET) - https://www.stratteos.us/api/books - values are passed as fields in x-www-form-url-encode
-- create (POST) - https://www.stratteos.us/api/books/create
+- list all (GET) - https://www.stratteos.us/api/books 
+- create (POST) - https://www.stratteos.us/api/books/create - values are passed as fields in x-www-form-url-encode
 - read (GET) - https://www.stratteos.us/api/books/5b3179ebd7670b758468f9b0
 - update (PUT) - https://www.stratteos.us/api/books/update - values are passed as fields in x-www-form-url-encode
 - delete (DELETE) - https://www.stratteos.us/api/books/delete/5b3179ebd7670b758468f9b0
